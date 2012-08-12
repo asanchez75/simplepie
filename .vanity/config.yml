@@ -1,0 +1,4 @@
+vanity:
+    name: SimplePie
+api:
+    input: library/*.php

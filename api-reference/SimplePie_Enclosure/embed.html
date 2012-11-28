@@ -1,0 +1,54 @@
+<!DOCTYPE html><html prefix="og: http://ogp.me/ns#"><head profile="http://dublincore.org/documents/dcq-html/"><meta http-equiv="X-UA-Compatible" content="Chrome=1; IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta property="og:type" content="website"><meta charset="UTF-8"><link rel="schema.DC"      href="http://purl.org/dc/elements/1.1/"><link rel="schema.DCTERMS" href="http://purl.org/dc/terms/"><title>SimplePie_Enclosure::embed() - SimplePie latest</title><meta name="DC.title" lang="en" content="SimplePie_Enclosure::embed() - SimplePie latest"><meta property="og:site_name" content="SimplePie"><meta property="og:title" content="SimplePie_Enclosure::embed()"><meta name="DC.format" scheme="DCTERMS.IMT"      content="text/html;charset=UTF-8"><meta name="DC.type"   scheme="DCTERMS.DCMIType" content="Text"><meta name="description"        lang="en" content="A super-fast, easy-to-use, RSS and Atom parser written in PHP."><meta name="DC.description"     lang="en" content="A super-fast, easy-to-use, RSS and Atom parser written in PHP."><meta name="DCTERMS.abstract"   lang="en" content="A super-fast, easy-to-use, RSS and Atom parser written in PHP."><meta property="og:description" lang="en" content="A super-fast, easy-to-use, RSS and Atom parser written in PHP."><meta property="og:locale" content="en"><meta name="DC.language" scheme="DCTERMS.RFC5646" content="en"><meta property="og:url" content="http://docs.simplepie.org/api-reference/SimplePie_Enclosure/embed.html"><link rel="canonical" href="http://docs.simplepie.org/api-reference/SimplePie_Enclosure/embed.html"><link rel="DCTERMS.LicenseDocument" href="http://www.opensource.org/licenses/bsd-license.php"><meta name="DC.date" scheme="DCTERMS.W3CDTF"   content="2012-11-27T23:35:58-0800"><meta name="DC.rights" lang="en" content="2004-2012 The SimplePie Development Team"><meta name="DC.contributor" scheme="DCTERMS.Agent" content="Ryan Parman"><meta name="DC.contributor" scheme="DCTERMS.Agent" content="Geoffrey Sneddon"><meta name="DC.contributor" scheme="DCTERMS.Agent" content="Ryan McCue"><link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css"><link rel="stylesheet" href="../../styles/app.css"><link rel="stylesheet" href="../../bootstrap/css/bootstrap-responsive.min.css"><link rel="stylesheet" href="../../prettify/prettify.css"></head><body data-spy="scroll" data-target="#navTracker" data-offset="100" itemscope itemtype="http://schema.org/WebPage"><div class="navbar navbar-fixed-top navbar-inverse"><div class="navbar-inner"><div class="container"><a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a href="" class="brand">SimplePie</a><div class="nav-collapse"><ul class="nav"><li class="active"><a href="../../api-reference/">API Reference</a></li><li><a href="../../user-guide/">User Guide</a></li></ul><form class="navbar-search pull-right"><input type="text" class="search-query" placeholder="Search" data-provide="typeahead"></form></div></div></div></div><div id="description" class="container"><div class="row"><div class="span12"><ul class="breadcrumb"><li><i class="icon-map-marker"></i>&nbsp;</li><li><a href="../../api-reference/index.html">API Reference</a><span class="divider">\</span></li><li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="./index.html" itemprop="url"><span itemprop="title">SimplePie_Enclosure</span></a><span class="divider">\</span></li><li class="active" itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><span itemprop="title">embed()</span></li></ul></div></div><div class="row"><div class="navigation-wrapper"><div class="span3 offset9 navigation" id="navTracker"><ul class="nav nav-list well"><li class="nav-header">Contents</li><li><a href="#description"><i class="icon-book"></i> Description</a></li><li><a href="#examples"><i class="icon-cog"></i> Examples</a></li><li><a href="#parameters"><i class="icon-th-list"></i> Parameters</a></li><li><a href="#returns"><i class="icon-share-alt"></i> Returns</a></li></ul><br><a href="https://twitter.com/simplepie" class="twitter-follow-button" data-show-screen-name="true" data-show-count="true" data-size="medium" data-lang="en-US">Follow @simplepie</a><br></div></div><div class="span9 content" itemprop="mainContentOfPage"><div class="page-header"><span class="label label-info">Method</span><h1>embed <small>( $options, $native )</small></h1><span class="fullname">&rarr; SimplePie_Enclosure::embed()</span></div><p>Embed the enclosure using Javascript  <code>$options</code> is an array or comma-separated key:value string, with the
+following properties:</p><ul><li><code>alt</code> (string): Alternate content for when an end-user does not have
+the appropriate handler installed or when a file type is
+unsupported. Can be any text or HTML. Defaults to blank.</li><li><code>altclass</code> (string): If a file type is unsupported, the end-user will
+see the alt text (above) linked directly to the content. That link
+will have this value as its class name. Defaults to blank.</li><li><code>audio</code> (string): This is an image that should be used as a
+placeholder for audio files before they're loaded (QuickTime-only).
+Can be any relative or absolute URL. Defaults to blank.</li><li><code>bgcolor</code> (string): The background color for the media, if not
+already transparent. Defaults to <code>#ffffff</code>.</li><li><code>height</code> (integer): The height of the embedded media. Accepts any
+numeric pixel value (such as <code>360</code>) or <code>auto</code>. Defaults to <code>auto</code>,
+and it is recommended that you use this default.</li><li><code>loop</code> (boolean): Do you want the media to loop when its done?
+Defaults to <code>false</code>.</li><li><code>mediaplayer</code> (string): The location of the included
+<code>mediaplayer.swf</code> file. This allows for the playback of Flash Video
+(<code>.flv</code>) files, and is the default handler for non-Odeo MP3's.
+Defaults to blank.</li><li><code>video</code> (string): This is an image that should be used as a
+placeholder for video files before they're loaded (QuickTime-only).
+Can be any relative or absolute URL. Defaults to blank.</li><li><code>width</code> (integer): The width of the embedded media. Accepts any
+numeric pixel value (such as <code>480</code>) or <code>auto</code>. Defaults to <code>auto</code>,
+and it is recommended that you use this default.</li><li><code>widescreen</code> (boolean): Is the enclosure widescreen or standard?
+This applies only to video enclosures, and will automatically resize
+the content appropriately.  Defaults to <code>false</code>, implying 4:3 mode.</li></ul><p>Note: Non-widescreen (4:3) mode with <code>width</code> and <code>height</code> set to <code>auto</code>
+will default to 480x360 video resolution.  Widescreen (16:9) mode with
+<code>width</code> and <code>height</code> set to <code>auto</code> will default to 480x270 video resolution.</p><br><table border="0" class="class-reference"><tbody><tr><th><p>Visibility</p></th><td><p>public</p></td></tr><tr><th><p>Defined in</p></th><td><p><a href="../../api-reference/SimplePie_Enclosure/index.html">SimplePie_Enclosure</a></p></td></tr><tr><th><p>Location</p></th><td><p>library/SimplePie/Enclosure.php:970-1192</p></td></tr></tbody></table><h2 id="examples">Examples</h2><div class="example description"><h3>Launch an EC2 instance.</h3><pre class="prettyprint linenums">// Instantiate the class
+$ec2 = new AmazonEC2();
+
+// Boot an instance of the image
+$response = $ec2->run_instances('ami-84db39ed', 1, 1, array(
+    'InstanceType' => 'm1.small'
+));
+
+// Success?
+var_dump($response->isOK());</pre></div><h2 id="parameters">Parameters</h2><div class="well"><table cellpadding="0" cellspacing="0" border="0" width="100%" class="table table-striped"><thead><tr><th><p>Name</p></th><th class="description"><p>Description</p></th></tr></thead><tbody><tr><td class="parameter"><p><code>options</code></p></td><td class="description"><p><code>array</code>
+							&nbsp;
+																					<code>string</code>
+							&nbsp;
+						
+												</p><p>Comma-separated key:value list, or array</p></td></tr><tr><td class="parameter"><p><code>native</code></p></td><td class="description"><p><code>boolean</code></p><p>Use <code>&lt;embed&gt;</code></p></td></tr></tbody></table></div><h2 id="returns">Returns</h2><div class="well"><table cellpadding="0" cellspacing="0" border="0" width="100%" class="table table-striped"><thead><tr><th><p>Type</p></th><th class="description"><p>Description</p></th></tr></thead><tbody><tr><td class="parameter"><p><code>string</code></p></td><td class="description"><p>HTML string to output</p></td></tr></tbody></table></div><p class="footnote" align="center"><small>Copyright &copy;
+			<span itemprop="copyrightYear">2004-2012</span>&nbsp;
+			<a href="http://simplepie.org" itemscope itemtype="http://schema.org/Organization"><span itemprop="legalName">The SimplePie Development Team</span></a></small><br><small>Built on <span itemprop="dateCreated" content="2012-11-27T23:35:58-0800">27 Nov 2012, 11:35pm PST</span>.</small></p></div></div></div><div id="bottom-spacer"></div><script src="../../jquery/jquery.1.7.1.min.js" type="text/javascript" charset="utf-8"></script><script src="../../jquery/jquery.easing.min.js" type="text/javascript" charset="utf-8" defer></script><script src="../../prettify/prettify.js" type="text/javascript" charset="utf-8" defer></script><script src="../../bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8" defer></script><script src="../../scripts/app.js" type="text/javascript" charset="utf-8"></script><script src="../../api-reference/typeahead.json" type="text/javascript" charset="utf-8" defer></script><script type="text/javascript">
+
+$(function() {
+
+	// Enable search
+	vanitySearch('../../api-reference');
+
+	
+	
+	
+		// Twitter API
+	!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+	
+	});
+
+</script></body></html>

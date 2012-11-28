@@ -1,4 +1,22 @@
 vanity:
     name: SimplePie
-api:
+source:
     input: library/*.php
+    github:
+        #repo_owner: simplepie
+        #repo_name: simplepie
+warn:
+    inconsistencies: true
+generator:
+    template:
+        seo:
+            contributors: ["Ryan Parman", "Geoffrey Sneddon", "Ryan McCue"]
+            copyright_owner: The SimplePie Development Team
+            copyright_owner_url: http://simplepie.org
+            copyright_years: 2004-2012
+            description: "A super-fast, easy-to-use, RSS and Atom parser written in PHP."
+            license_url: http://www.opensource.org/licenses/bsd-license.php
+            locale: en
+        social_buttons:
+            twitter_username: simplepie
+        web_root: http://docs.simplepie.org/

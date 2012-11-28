@@ -1,3 +1,5 @@
+.vanity/output/
 *sandbox*
 demo/cache/*
 SimplePie.compiled.php
+vendor/*
